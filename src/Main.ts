@@ -1,10 +1,11 @@
 import { injectable, inject } from 'inversify';
-import { Logger } from './Logger';
+import { ILogger } from './Loggers/ILogger';
+import { Types } from './Types';
 
 @injectable()
 export class Main
 {
-    constructor(private _logger: Logger)
+    constructor(@inject(Types.ILogger)private _logger: ILogger)
     { }
 
     public async Start(): Promise<void>

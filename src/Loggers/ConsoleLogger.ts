@@ -1,7 +1,8 @@
 import { injectable } from "inversify";
+import { ILogger } from "./ILogger";
 
 @injectable()
-export class Logger
+export class ConsoleLogger implements ILogger
 {
     public Log(text: string): void
     {        
