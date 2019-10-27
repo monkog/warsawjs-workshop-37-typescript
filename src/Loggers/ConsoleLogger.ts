@@ -6,6 +6,6 @@ export class ConsoleLogger implements ILogger
 {
     public Log(text: string): void
     {        
-        console.log('start');
+        console.log(text);
     }
 }

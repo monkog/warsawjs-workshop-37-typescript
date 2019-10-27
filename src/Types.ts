@@ -1,3 +1,4 @@
 export const Types = {
-    ILogger: Symbol('ILogger')
+    ILogger: Symbol('ILogger'),
+    IHttp: Symbol('IHttp')
 }
